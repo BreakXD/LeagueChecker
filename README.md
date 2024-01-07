@@ -2,7 +2,9 @@
 # League of Legends Account Checker
 
 ## Introduction (EN)
-This system checks information of League of Legends accounts. It can be used via CLI or through a web interface.
+This API checks information of League of Legends accounts. It can be used via CLI or through a web interface.
+
+![1](https://api.breakcoder.org/league_checker_cli.png)
 
 ## Prerequisites
 - PHP installed on the server.
@@ -54,7 +56,7 @@ The system returns various account information, including:
 ---
 
 ## Introdução (PT-BR)
-Este sistema verifica informações de contas do League of Legends. Pode ser utilizado via CLI ou através de uma interface web.
+Esta API verifica informações de contas do League of Legends. Pode ser utilizado via CLI ou através de uma interface web.
 
 ## Pré-requisitos
 - PHP instalado no servidor.
