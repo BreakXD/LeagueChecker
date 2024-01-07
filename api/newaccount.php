@@ -7,17 +7,14 @@ class StartCheck{
 
 	public $tokenLol;
 	public $tokenRiot;
-
 	public $tokenLedge;
-
 	#public $entitlements;
-
 
 	// API STUFF
 	public $account;
 	public $userInfo;
-	public $store; //DEPRECATED, USING LOOT TO GET RP & BE, USERINFO FOR LEVEL
-	public $storeLedge;
+	#public $store; //DEPRECATED, USING LOOT TO GET RP & BE, USERINFO FOR LEVEL
+	#public $storeLedge; //DEPRECATED, USING LOOT TO GET RP & BE, USERINFO FOR LEVEL
 	public $email;
 	public $history;
 	public $penalty;
@@ -94,13 +91,13 @@ class StartCheck{
 		/*$this->store = new \store\Store($this->tokenLol, $this->userInfo->ledge_region); // NOT USING $this->userInfo->store_region ANYMORE
 		if($GLOBALS['debugMode']){
 			echo PHP_EOL.'new Store: '.time() - $GLOBALS['startTime'];
-		}*/
+		}
 
 		// STORE LEDGE
 		$this->storeLedge = new \storeLedge\StoreLedge($this->tokenLol, $this->userInfo->accId, $this->userInfo->ledge_region);
 		if($GLOBALS['debugMode']){
 			echo PHP_EOL.'new StoreLedge: '.time() - $GLOBALS['startTime'];
-		}
+		}*/
 
 		// EMAIL
 		$this->email = new \email\Email($this->tokenRiot);
