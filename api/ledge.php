@@ -1,7 +1,6 @@
 <?php
 namespace ledge;
 
-
 class Ledge{
 	private $tokenLol;
 	private $userInfoJwt;

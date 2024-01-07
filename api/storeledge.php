@@ -1,6 +1,4 @@
 <?php
-
-
 namespace storeLedge;
 
 class storeLedge{

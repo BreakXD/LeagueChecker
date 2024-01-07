@@ -2,7 +2,6 @@
 namespace utils;
 
 class Utils{
-
 	private static $pathChampions = "api/data/champions-sumary.json";
 	private static $pathSkins = "api/data/skins.json";
 	private static $configPath = "api/data/config.json";

@@ -1,7 +1,6 @@
 <?php
 namespace ledgeApi;
 
-
 class LedgeApi{
 	private $store;
 	private $token;

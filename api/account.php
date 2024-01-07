@@ -1,5 +1,4 @@
 <?php
-
 namespace accountAPI;
 
 class AccountApi{
