@@ -236,8 +236,6 @@ class StartCheck{
 			}
 
 			//$r .= " | JWT ( {$this->userInfo->userInfoJwt} )";
-
-
 			echo $r;
 		}elseif($mode == "json"){
 
