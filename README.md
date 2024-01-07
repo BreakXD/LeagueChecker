@@ -13,6 +13,10 @@ This system checks information of League of Legends accounts. It can be used via
 Clone the repository or download the files to a PHP server.
 Configure your Hydra API key in `api/data/config.json`
 
+## Manual Updates
+1. To update base endpoints, edit and run `updateConfig.php` 
+2. To update Champions & Skins data each patch, run `php updateJson.php`
+
 ## Usage
 
 ### Via CLI
@@ -60,6 +64,11 @@ Este sistema verifica informações de contas do League of Legends. Pode ser uti
 ## Configuração
 Clone o repositório ou baixe os arquivos em um servidor com PHP.
 Configure sua chave da Hydra API em `api/data/config.json`
+
+## Atualizações Manuais
+1. Para atualizar os endpoints base, edite e execute `updateConfig.php`
+2. Para atualizar os dados de Campeões e Skins a cada atualização do jogo, execute `php updateJson.php`
+
 
 ## Uso
 
