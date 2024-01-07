@@ -2,7 +2,6 @@
 namespace email;
 
 class Email{
-
 	public $emailData;
 
 	public function __construct($token){

@@ -3,15 +3,12 @@ namespace ledge;
 
 
 class Ledge{
-
 	private $tokenLol;
 	private $userInfoJwt;
-
 	private $puuid;
-
 	private $sessionToken;
-	public $tokenLedge;
 
+	public $tokenLedge;
 	public $uswPrefix;
 	public $ledgePrefix;
 	public $region;

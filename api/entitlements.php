@@ -2,7 +2,6 @@
 namespace entitlements;
 
 class Entitlements{
-
 	public $entitlementsToken;
 
 	public function __construct($token){

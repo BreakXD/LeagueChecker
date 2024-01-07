@@ -3,22 +3,16 @@
 namespace login;
 
 class Auth{
-
 	private $user;
 	private $password;
-
 	private $apiUrl = "https://api.hydranetwork.org/";
 	private $key;
-
-	private static $header = array(
-		"Content-Type: application/json"
-	);
-
-	public $data;
 	private $client_id;
 	private $curl_options;
+	private static $header = array("Content-Type: application/json");
 
 	public $response;
+	public $data;
 
 	public function __construct($u, $p){
 		$this->key =  $GLOBALS['config']['variable']['hydra_key'];
