@@ -7,9 +7,11 @@ This system checks information of League of Legends accounts. It can be used via
 ## Prerequisites
 - PHP installed on the server.
 - Internet access for interaction with Riot Games APIs.
+- Hydra API key `https://api.hydranetwork.org/discord`
 
 ## Configuration
 Clone the repository or download the files to a PHP server.
+Configure your Hydra API key in `api/data/config.json`
 
 ## Usage
 
@@ -53,9 +55,11 @@ Este sistema verifica informações de contas do League of Legends. Pode ser uti
 ## Pré-requisitos
 - PHP instalado no servidor.
 - Acesso à internet para interação com as APIs da Riot Games.
+- Hydra API key `https://api.hydranetwork.org/discord`
 
 ## Configuração
 Clone o repositório ou baixe os arquivos em um servidor com PHP.
+Configure sua chave da Hydra API em `api/data/config.json`
 
 ## Uso
 
