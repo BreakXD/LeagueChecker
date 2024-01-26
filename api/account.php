@@ -58,6 +58,37 @@ class AccountApi{
 		return $this->riotIdChange;
 	}
 
+	public function submitRiotId($name, $tag){
+		if(!$this->riotIdChange['canChange']) return "Error during Riot ID change!";
+
+		$header = $this->header;
+		array_push($header, "Content-Type: application/json");
+
+		$curl_option = $this->curl_options;
+
+		$curl_option[CURLOPT_POSTFIELDS] = json_encode(array(
+			"game_name" => $name,
+			"tag_line" => $tag
+		));
+		$curl_option[CURLOPT_HTTPHEADER] = $header;
+
+
+		$url = "{$this->baseUrl}/aliases/v1/aliases";
+
+		$ch = curl_init($url);
+		curl_setopt_array($ch, $curl_option);
+
+		$result = curl_exec($ch);
+		curl_close($ch);
+
+		$result_json = json_decode($result,1);
+		if(isset($result_json['game_name']) && $result_json['game_name'] == $name){
+			return "Riot ID now is $name\#$tag!";
+		}else{
+			return "Error during Riot ID change!: $result";
+		}
+	}
+
 }
 
 

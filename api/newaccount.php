@@ -87,6 +87,12 @@ class StartCheck{
 			echo PHP_EOL.'new AccountApi: '.time() - $GLOBALS['startTime'];
 		}
 
+		// CHANGE RIOT ID
+		/*$changeStatus = $this->account->submitRiotId("name", "tag");
+		if($GLOBALS['debugMode']){
+			echo PHP_EOL."submitRiotId: $changeStatus: ".time() - $GLOBALS['startTime'];
+		}*/
+		
 		// STORE -> DEPRECATED, USING LOOT TO GET RP & BE, USERINFO FOR LEVEL
 		/*$this->store = new \store\Store($this->tokenLol, $this->userInfo->ledge_region); // NOT USING $this->userInfo->store_region ANYMORE
 		if($GLOBALS['debugMode']){
