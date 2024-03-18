@@ -45,7 +45,6 @@ class Auth{
 	private function getTokens(){
 		$ch = array();
 		$mh = curl_multi_init();
-		$active = 1;
 		$resultArray = array();
 
 		for($i = 0; $i < 2; $i++){
@@ -60,9 +59,9 @@ class Auth{
 			curl_multi_add_handle($mh, $ch[$i]);
 		}
 
-		while($active){
+		do{
 			curl_multi_exec($mh, $active);
-		}
+		} while ($active);
 
 		for($i = 0; $i < 2; $i++){
 			curl_multi_remove_handle($mh, $ch[$i]);

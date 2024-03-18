@@ -53,7 +53,6 @@ class LedgeApi{
 	private function getAllData(){
 		$ch = array();
 		$mh = curl_multi_init();
-		$active = 1;
 
 		$api_array = array(
 			"history" => "/summoner-ledge/v1/regions/".$this->region."/summoners/name/".$this->nick,
@@ -70,9 +69,9 @@ class LedgeApi{
 			curl_multi_add_handle($mh, $ch[$i]);
 		}
 
-		while($active){
+		do{
 			curl_multi_exec($mh, $active);
-		}
+		} while ($active);
 
 		for($i = 0; $i < count($api_array); $i++){
 			curl_multi_remove_handle($mh, $ch[$i]);
