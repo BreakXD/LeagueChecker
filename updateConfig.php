@@ -3,17 +3,17 @@ $config = array("variable" => array(), "endpoint" => array());
 $path = "api/data/config.json";
 
 $usw_region = array(
-    'BR1' => 'usw2-green',
-    'LA1' => 'usw2-green',
-    'LA2' => 'usw2-green',
-    'NA1' => 'usw2-green',
-    'OC1' => 'usw2-green',
-    'RU' => 'euc1-green',
-    'TR1' => 'euc1-green',
-    'EUN1' => 'euc1-green',
-    'EUW1' => 'euc1-green',
-    'JP1' => 'apne1-green',
-    'KR' => 'apne1-green'
+    'BR1' => 'usw2-red',
+    'LA1' => 'usw2-red',
+    'LA2' => 'usw2-red',
+    'NA1' => 'usw2-red',
+    'OC1' => 'usw2-red',
+    'RU' => 'euc1-red',
+    'TR1' => 'euc1-red',
+    'EUN1' => 'euc1-red',
+    'EUW1' => 'euc1-red',
+    'JP1' => 'apne1-red',
+    'KR' => 'apne1-red'
 );
 
 $ledge_region = array(
